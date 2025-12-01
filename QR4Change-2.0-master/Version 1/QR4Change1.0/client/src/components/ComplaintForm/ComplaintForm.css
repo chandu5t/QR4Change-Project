@@ -1,0 +1,319 @@
+
+.complaint-page {
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #e6fffa, #bbf7d0); /* teal-100 to green-100 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.complaint-form,
+.form-title,
+.form-group,
+.form-label,
+.form-input,
+.submit-btn,
+.modal-overlay,
+.modal-box,
+.modal-icon,
+.modal-title,
+.modal-subtext,
+.modal-details,
+.modal-actions,
+.btn-track,
+.btn-home,
+.toast-container {
+  transition: all 0.3s ease;
+}
+
+.complaint-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  z-index: 10;
+}
+
+.form-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #0d9488; /* teal-700 */
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #374151; /* gray-700 */
+  margin-bottom: 0.5rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db; /* gray-300 */
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  color: #374151; /* gray-700 */
+  background: #f9fafb; /* gray-50 */
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #0d9488; /* teal-700 */
+  box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.2); /* teal-700/20 */
+}
+
+.form-input[readonly] {
+  background: #e5e7eb; /* gray-200 */
+  cursor: not-allowed;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.submit-btn {
+  width: 100%;
+  background: #0d9488; /* teal-700 */
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.submit-btn:hover {
+  background: #0f766e; /* teal-600 */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn:disabled {
+  background: #6b7280; /* gray-500 */
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  padding: 1rem;
+}
+
+.modal-box {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #99f6e4; /* teal-200 */
+}
+
+.modal-icon {
+  margin-bottom: 1rem;
+}
+
+.icon-success {
+  color: #16a34a; /* green-600 */
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0d9488; /* teal-700 */
+}
+
+.modal-subtext {
+  font-size: 0.95rem;
+  color: #374151; /* gray-700 */
+}
+
+.modal-details h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0d9488; /* teal-700 */
+  margin-bottom: 0.75rem;
+}
+
+.modal-details p {
+  font-size: 0.95rem;
+  color: #374151; /* gray-700 */
+}
+
+.modal-details b {
+  color: #0d9488; /* teal-700 */
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+.btn-track,
+.btn-home {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-track {
+  background: #0d9488; /* teal-700 */
+  color: white;
+}
+
+.btn-track:hover {
+  background: #0f766e; /* teal-600 */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-home {
+  background: #6b7280; /* gray-500 */
+  color: white;
+}
+
+.btn-home:hover {
+  background: #4b5563; /* gray-600 */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Toast styles */
+.toast-container {
+  z-index: 1000 !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .complaint-form {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+
+  .form-title {
+    font-size: 1.5rem;
+  }
+
+  .form-group {
+    margin-bottom: 1rem;
+  }
+
+  .form-label {
+    font-size: 0.9rem;
+  }
+
+  .form-input {
+    font-size: 0.9rem;
+    padding: 0.65rem;
+  }
+
+  .submit-btn {
+    font-size: 0.9rem;
+    padding: 0.65rem;
+  }
+
+  .modal-box {
+    padding: 1.25rem;
+    max-width: 100%;
+  }
+
+  .modal-title {
+    font-size: 1.25rem;
+  }
+
+  .modal-subtext,
+  .modal-details p {
+    font-size: 0.9rem;
+  }
+
+  .modal-details h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .complaint-page {
+    padding: 1rem;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .form-title {
+    font-size: 1.25rem;
+  }
+
+  .form-label {
+    font-size: 0.85rem;
+  }
+
+  .form-input {
+    font-size: 0.85rem;
+    padding: 0.5rem;
+  }
+
+  .submit-btn {
+    font-size: 0.85rem;
+    padding: 0.5rem;
+  }
+
+  .modal-box {
+    padding: 1rem;
+  }
+
+  .modal-title {
+    font-size: 1.1rem;
+  }
+
+  .modal-subtext,
+  .modal-details p {
+    font-size: 0.85rem;
+  }
+
+  .modal-details h3 {
+    font-size: 1rem;
+  }
+
+  .modal-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .btn-track,
+  .btn-home {
+    width: 100%;
+    padding: 0.5rem;
+  }
+}

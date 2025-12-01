@@ -1,0 +1,432 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #f9fafb;
+    color: #111827;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .dashboard-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e6fffa 0%, #bbf7d0 100%);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  .dashboard-navbar {
+    background: linear-gradient(90deg, #0d9488 0%, #047857 100%);
+    padding: 1.25rem 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .dashboard-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .dashboard-user {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #ffffff;
+    transition: all 0.3s ease;
+  }
+
+  .dashboard-user:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+  }
+
+  .dashboard-main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .dashboard-card,
+  .scanner-box,
+  .complaints-section,
+  .complaint-modal,
+  .confirm-modal,
+  .image-modal {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .dashboard-card {
+    max-width: 28rem;
+    padding: 2.5rem;
+  }
+
+  .scanner-box {
+    max-width: 28rem;
+    padding: 2rem;
+  }
+
+  .complaints-section {
+    max-width: 80rem;
+    padding: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .complaint-modal,
+  .confirm-modal {
+    max-width: 32rem;
+    padding: 2rem;
+  }
+
+  .image-modal {
+    max-width: 48rem;
+    padding: 2rem;
+  }
+
+  .scan-button {
+    background: linear-gradient(45deg, #0d9488, #10b981);
+    color: #ffffff;
+    padding: 1.25rem;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 20px rgba(13, 148, 136, 0.3);
+    position: relative;
+    overflow: hidden;
+    animation: pulse 2s infinite ease-in-out;
+  }
+
+  .scan-button::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+    transform: rotate(45deg);
+    transition: transform 0.5s ease;
+  }
+
+  .scan-button:hover::before {
+    transform: rotate(45deg) translate(10%, 10%);
+  }
+
+  .scan-button:hover {
+    transform: scale(1.1) translateY(-4px);
+    box-shadow: 0 8px 24px rgba(13, 148, 136, 0.4);
+  }
+
+  .stop-button {
+    background: linear-gradient(45deg, #ef4444, #dc2626);
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  .stop-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(239, 68, 68, 0.4);
+  }
+
+  .scanner-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0d9488;
+    margin-bottom: 1rem;
+  }
+
+  .qr-reader {
+    width: 100%;
+    height: 28rem;
+    border: 4px solid #0d9488;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .scan-result {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #1f2937;
+  }
+
+  .scan-url {
+    display: block;
+    font-size: 0.875rem;
+    color: #6b7280;
+    word-break: break-all;
+  }
+
+  .complaint-modal h3,
+  .confirm-modal h3,
+  .image-modal h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #0d9488;
+    margin-bottom: 1.25rem;
+  }
+
+  .complaint-modal p,
+  .confirm-modal p {
+    font-size: 1rem;
+    color: #374151;
+    line-height: 1.6;
+  }
+
+  .complaint-modal strong {
+    color: #0d9488;
+    font-weight: 600;
+  }
+
+  .image-container {
+    max-height: 60vh;
+    overflow-y: auto;
+    border-radius: 0.75rem;
+    border: 2px solid #e5e7eb;
+    padding: 0.5rem;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+
+  th,
+  td {
+    padding: 1rem;
+    text-align: left;
+    font-size: 0.875rem;
+  }
+
+  th {
+    font-weight: 600;
+    color: #0d9488;
+    background: #f0f9ff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  td {
+    color: #374151;
+  }
+
+  tr {
+    border-bottom: 1px solid #e5e7eb;
+    transition: background 0.3s ease;
+  }
+
+  tr:hover {
+    background: #e6fffa;
+  }
+
+  .toast-container {
+    z-index: 10000 !important;
+  }
+
+  /* Custom Scrollbar */
+  .image-container::-webkit-scrollbar,
+  .complaint-modal::-webkit-scrollbar,
+  .confirm-modal::-webkit-scrollbar,
+  .image-modal::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .image-container::-webkit-scrollbar-track,
+  .complaint-modal::-webkit-scrollbar-track,
+  .confirm-modal::-webkit-scrollbar-track,
+  .image-modal::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 3px;
+  }
+
+  .image-container::-webkit-scrollbar-thumb,
+  .complaint-modal::-webkit-scrollbar-thumb,
+  .confirm-modal::-webkit-scrollbar-thumb,
+  .image-modal::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 3px;
+  }
+
+  .image-container::-webkit-scrollbar-thumb:hover,
+  .complaint-modal::-webkit-scrollbar-thumb:hover,
+  .confirm-modal::-webkit-scrollbar-thumb:hover,
+  .image-modal::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+  }
+
+  /* Accessibility */
+  button:focus,
+  [role="row"]:focus,
+  .dashboard-user:focus {
+    outline: 2px solid #0d9488;
+    outline-offset: 2px;
+  }
+
+  /* Pulse animation for scan button */
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(13, 148, 136, 0.4);
+    }
+    50% {
+      box-shadow: 0 0 0 10px rgba(13, 148, 136, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(13, 148, 136, 0);
+    }
+  }
+
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .complaints-section {
+      max-width: 100%;
+      padding: 1.5rem;
+    }
+
+    .dashboard-main {
+      padding: 1.5rem;
+    }
+
+    th,
+    td {
+      font-size: 0.85rem;
+      padding: 0.75rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .dashboard-navbar {
+      padding: 1rem;
+    }
+
+    .dashboard-title {
+      font-size: 1.5rem;
+    }
+
+    .dashboard-user {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+    }
+
+    .dashboard-card,
+    .scanner-box,
+    .complaint-modal,
+    .confirm-modal,
+    .image-modal {
+      padding: 1.5rem;
+      max-width: calc(100% - 2rem);
+    }
+
+    .qr-reader {
+      height: 16rem;
+    }
+
+    .complaint-modal h3,
+    .confirm-modal h3,
+    .image-modal h3 {
+      font-size: 1.5rem;
+    }
+
+    .complaint-modal p,
+    .confirm-modal p {
+      font-size: 0.9rem;
+    }
+
+    th,
+    td {
+      font-size: 0.8rem;
+      padding: 0.5rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .dashboard-title {
+      font-size: 1.25rem;
+    }
+
+    .dashboard-user {
+      font-size: 0.875rem;
+      padding: 0.5rem;
+    }
+
+    .dashboard-main {
+      padding: 1rem;
+    }
+
+    .dashboard-card,
+    .scanner-box,
+    .complaints-section,
+    .complaint-modal,
+    .confirm-modal,
+    .image-modal {
+      padding: 1rem;
+      max-width: 100%;
+    }
+
+    .qr-reader {
+      height: 14rem;
+    }
+
+    .scan-button {
+      padding: 1rem;
+    }
+
+    th,
+    td {
+      font-size: 0.75rem;
+      padding: 0.5rem;
+    }
+
+    .complaint-modal h3,
+    .confirm-modal h3,
+    .image-modal h3 {
+      font-size: 1.25rem;
+    }
+  }
+}

@@ -1,0 +1,119 @@
+
+/* Custom styles for SignIn component */
+.signin-container {
+  position: relative;
+  padding: 1rem;
+}
+
+.signin-card {
+  font-family: 'Inter', sans-serif;
+}
+
+.signin-title {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.signin-input {
+  transition: all 0.3s ease;
+}
+
+.signin-button {
+  transition: all 0.3s ease;
+}
+
+.signin-footer {
+  font-family: 'Inter', sans-serif;
+}
+
+.signin-link {
+  transition: all 0.3s ease;
+}
+
+/* Fallback styles to ensure visibility */
+.signin-container {
+  background-color: #f3f4f6; /* gray-100 as fallback */
+}
+
+.signin-card {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  z-index: 10; /* Ensure card is above background */
+}
+
+.signin-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #16a34a; /* green-600 */
+  margin-bottom: 24px;
+}
+
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.signin-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db; /* gray-300 */
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.signin-input:focus {
+  outline: none;
+  border-color: #16a34a;
+  box-shadow: 0 0 0 2px rgba(22, 163, 74, 0.2);
+}
+
+.signin-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #16a34a; /* green-600 */
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.signin-button:hover:not(:disabled) {
+  background-color: #15803d; /* green-700 */
+}
+
+.signin-footer {
+  margin-top: 16px;
+  font-size: 0.875rem;
+  color: #374151; /* gray-700 */
+}
+
+.signin-link {
+  color: #22c55e; /* green-500 */
+  text-decoration: none;
+}
+
+.signin-link:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 480px) {
+  .signin-card {
+    padding: 1.5rem;
+  }
+
+  .signin-title {
+    font-size: 1.5rem;
+  }
+
+  .signin-input,
+  .signin-button {
+    font-size: 0.875rem;
+  }
+}

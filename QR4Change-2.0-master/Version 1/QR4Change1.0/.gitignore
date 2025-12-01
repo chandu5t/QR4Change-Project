@@ -1,0 +1,14 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore Node modules
+node_modules/
+
+# Ignore environment files
+.env
+
+# Ignore build and logs
+build/
+dist/
+*.log
