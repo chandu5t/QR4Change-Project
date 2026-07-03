@@ -25,18 +25,18 @@
 
 <p align="center">
 
-<a href="https://qr4change.vercel.app/">
-<img src="https://img.shields.io/badge/🚀%20Launch%20QR4Change-2962FF?style=for-the-badge&logo=vercel&logoColor=white"/>
-</a>
+<p align="center">
+  <a href="https://qr4change.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/🚀%20Launch-Live%20Demo-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Launch Live Demo">
+  </a>
+</p>
 
-<br><br>
 
 <b>Experience QR4Change directly in your browser.</b><br>
 No installation required • Fast • Responsive • Mobile Friendly
 
 </p>
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-2962FF?style=for-the-badge&logo=vercel&logoColor=white)](https://qr4change.vercel.app/)
 [![Frontend](https://img.shields.io/badge/Frontend-React-61DAFB?style=for-the-badge&logo=react&logoColor=white)](#)
 [![Backend](https://img.shields.io/badge/Backend-Express-000000?style=for-the-badge&logo=express&logoColor=white)](#)
 [![AI](https://img.shields.io/badge/AI-YOLOv11%20%7C%20ELECTRA-8E24AA?style=for-the-badge)](#)
