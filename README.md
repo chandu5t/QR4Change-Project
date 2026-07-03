@@ -1,6 +1,43 @@
 #  QR4Change: Empowering Communities with Smart Civic Solutions
 
 
+## 🚀 Try QR4Change Live
+
+<p align="center">
+  <strong>Experience QR4Change — an AI-powered Smart Civic Grievance Management System.</strong><br><br>
+  Report civic issues, explore the interactive dashboard, and experience the complete platform in your browser.
+</p>
+
+<p align="center">
+
+<a href="https://qr4change.vercel.app/" target="_blank">
+  <img src="https://img.shields.io/badge/🚀%20Launch%20Live%20Platform-2962FF?style=for-the-badge&logo=vercel&logoColor=white" alt="Launch Live Platform">
+</a>
+
+</p>
+
+<p align="center">
+✨ No Installation Required &nbsp; • &nbsp;
+🤖 AI Powered &nbsp; • &nbsp;
+📱 Mobile Friendly &nbsp; • &nbsp;
+⚡ Real-Time Dashboard
+</p>
+
+<p align="center">
+
+<img src="https://img.shields.io/badge/Frontend-React-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React">
+
+<img src="https://img.shields.io/badge/Backend-Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express">
+
+<img src="https://img.shields.io/badge/Database-MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB">
+
+<img src="https://img.shields.io/badge/AI-YOLOv11%20%7C%20ELECTRA-8E24AA?style=for-the-badge" alt="AI">
+
+</p>
+
+---
+
+
 ## 🎥 Project Walkthrough
 
 <p align="center">
@@ -24,28 +61,6 @@ Watch the complete walkthrough of <strong>QR4Change</strong> to explore the AI-p
 [![GitHub Forks](https://img.shields.io/github/forks/yourusername/qr4change.svg?style=social&label=Fork)](https://github.com/yash-maske/QR4Change-2.0) 
 
 <br>
-
-## 🌐 Live Demo
-
-<p align="center">
-  Experience <strong>QR4Change</strong> directly in your browser.<br>
-  No installation required • Fast • Responsive • Mobile Friendly
-</p>
-<br></br>
-<p align="center">
-  <a href="https://qr4change.vercel.app/" target="_blank">
-    <img src="https://img.shields.io/badge/Launch-Live%20Demo-FFB74D?style=for-the-badge&logo=vercel&logoColor=black&labelColor=87CEEB" alt="Launch Live Demo">
-  </a>
-</p>
-<br></br>
-
-[![Live Demo](https://img.shields.io/badge/Live-Demo-2962FF?style=for-the-badge&logo=vercel&logoColor=white)](https://qr4change.vercel.app/)
-[![Frontend](https://img.shields.io/badge/Frontend-React-61DAFB?style=for-the-badge&logo=react&logoColor=white)](#)
-[![Backend](https://img.shields.io/badge/Backend-Express-000000?style=for-the-badge&logo=express&logoColor=white)](#)
-[![AI](https://img.shields.io/badge/AI-YOLOv11%20%7C%20ELECTRA-8E24AA?style=for-the-badge)](#)
-
-
-
 
 ---
 
