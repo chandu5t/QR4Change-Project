@@ -8,25 +8,34 @@
 [![GitHub Forks](https://img.shields.io/github/forks/yourusername/qr4change.svg?style=social&label=Fork)](https://github.com/yash-maske/QR4Change-2.0) 
 
 <br>
+
 ## 🌐 Live Demo
 
 <p align="center">
+  Experience <strong>QR4Change</strong> directly in your browser.<br>
+  No installation required • Fast • Responsive • Mobile Friendly
+</p>
 
 <p align="center">
   <a href="https://qr4change.vercel.app/" target="_blank">
-    <img src="https://img.shields.io/badge/🚀%20Launch-Live%20Demo-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Launch Live Demo">
+    <img src="https://img.shields.io/badge/Launch-Live%20Demo-FFB74D?style=for-the-badge&logo=vercel&logoColor=black&labelColor=87CEEB" alt="Launch Live Demo">
   </a>
 </p>
 
-
-<b>Experience QR4Change directly in your browser.</b><br>
-No installation required • Fast • Responsive • Mobile Friendly
-
+<p align="center">
+  <a href="https://qr4change.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/Open%20in-Browser-87CEEB?style=flat-square&logo=googlechrome&logoColor=black" alt="Open in Browser">
+  </a>
 </p>
+
+<p align="center">
 
 [![Frontend](https://img.shields.io/badge/Frontend-React-61DAFB?style=for-the-badge&logo=react&logoColor=white)](#)
 [![Backend](https://img.shields.io/badge/Backend-Express-000000?style=for-the-badge&logo=express&logoColor=white)](#)
 [![AI](https://img.shields.io/badge/AI-YOLOv11%20%7C%20ELECTRA-8E24AA?style=for-the-badge)](#)
+
+</p>
+
 
 ---
 
