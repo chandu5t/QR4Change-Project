@@ -2,6 +2,30 @@
 
 ![QR4Change Banner](./QR4Change-2.0-master/image.jpg) <!-- Replace with actual banner image -->
 
+
+
+
+## 🎥 Project Walkthrough
+
+<p align="center">
+Watch a complete walkthrough of <strong>QR4Change</strong> to see how citizens can report civic issues, how AI verifies complaints, and how authorities manage them.
+</p>
+
+<p align="center">
+
+<a href="./QR4Change-2.0-master/QR4Change-Video.mp4">
+  <img src="https://img.shields.io/badge/▶️%20Watch-Demo%20Video-E53935?style=for-the-badge&logo=youtube&logoColor=white" alt="Watch Demo Video">
+</a>
+
+</p>
+
+<p align="center">
+📹 Click the button above to open the project demonstration video.
+</p>
+
+
+
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![GitHub Stars](https://img.shields.io/github/stars/yourusername/qr4change.svg?style=social&label=Star)](https://github.com/yash-maske/QR4Change-2.0)
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/qr4change.svg)](https://github.com/yash-maske/QR4Change-2.0)
