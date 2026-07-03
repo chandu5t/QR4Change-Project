@@ -1,7 +1,7 @@
 #  QR4Change: Empowering Communities with Smart Civic Solutions
 
 
-# 🚀 Try QR4Change Live
+## Try QR4Change Live :
 
 <p align="center">
   <strong>Experience QR4Change — an AI-powered Smart Civic Grievance Management System.</strong><br><br>
