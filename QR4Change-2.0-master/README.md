@@ -1,4 +1,4 @@
-# 🌆 QR4Change: Empowering Communities with Smart Civic Solutions
+#  QR4Change: Empowering Communities with Smart Civic Solutions
 
 ![QR4Change Banner](./image.jpg) <!-- Replace with actual banner image -->
 
@@ -9,29 +9,29 @@
 
 ---
 
-## 🚀 Overview
+##  Overview
 
 **QR4Change** is a revolutionary **Smart QR-Based Civic Grievance Reporting System** designed to bridge the gap between citizens and municipal authorities in India. By leveraging **QR codes**, **AI-powered verification**, and a **user-friendly interface**, QR4Change simplifies the process of reporting urban issues like potholes, garbage dumps, and broken infrastructure. Citizens can scan QR codes at hotspot locations to file complaints effortlessly, while authorities receive verified, prioritized issues for swift resolution. With real-time tracking and transparent dashboards, QR4Change fosters trust and accountability, paving the way for smarter cities.
 
-🌟 **Why QR4Change?** It eliminates bureaucratic hurdles, ensures authentic complaints using deep learning, and prioritizes urgent issues with NLP, making civic engagement accessible and efficient.
+ **Why QR4Change?** It eliminates bureaucratic hurdles, ensures authentic complaints using deep learning, and prioritizes urgent issues with NLP, making civic engagement accessible and efficient.
 
-📄 **Learn More:** Check out our [research paper](QR4Change.docx) for a deep dive into the system.
-
----
-
-## ✨ Key Features
-
-- **📱 QR Code Reporting:** Scan QR codes at civic hotspots to access pre-filled complaint forms with geotagged metadata (location, ward).
-- **🖼️ AI-Driven Verification:** Uses YOLOv11n (potholes) and InceptionV3 (garbage) to validate complaints, filtering out spam.
-- **⚡ Urgency Scoring:** NLP-powered ELECTRA model classifies complaints as High or Low urgency for effective prioritization.
-- **🌐 Responsive Interface:** Built with ReactJS and TypeScript for seamless access on mobile and desktop.
-- **📊 Public Dashboard:** Real-time heatmaps, filters, and status updates for transparency and accountability.
-- **🔄 Feedback Loop:** Citizens receive resolution notifications and can provide feedback to ensure satisfaction.
-- **🔒 Scalable & Secure:** Powered by Express.js, Django, and MongoDB for robust, secure, and scalable operations.
+ **Learn More:** Check out our [research paper](QR4Change.docx) for a deep dive into the system.
 
 ---
 
-## 🏗️ System Architecture
+##  Key Features
+
+- ** QR Code Reporting:** Scan QR codes at civic hotspots to access pre-filled complaint forms with geotagged metadata (location, ward).
+- ** AI-Driven Verification:** Uses YOLOv11n (potholes) and InceptionV3 (garbage) to validate complaints, filtering out spam.
+- ** Urgency Scoring:** NLP-powered ELECTRA model classifies complaints as High or Low urgency for effective prioritization.
+- ** Responsive Interface:** Built with ReactJS and TypeScript for seamless access on mobile and desktop.
+- ** Public Dashboard:** Real-time heatmaps, filters, and status updates for transparency and accountability.
+- ** Feedback Loop:** Citizens receive resolution notifications and can provide feedback to ensure satisfaction.
+- ** Scalable & Secure:** Powered by Express.js, Django, and MongoDB for robust, secure, and scalable operations.
+
+---
+
+##  System Architecture
 
 QR4Change integrates six modules for a seamless grievance redressal process, combining cutting-edge AI with user-friendly design.
 
@@ -56,7 +56,7 @@ QR4Change integrates six modules for a seamless grievance redressal process, com
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 The repository is organized for clarity and modularity:
 
@@ -95,7 +95,7 @@ qr4change/
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Frontend:** 
   - ReactJS (UI), Vite (fast builds), TypeScript (type safety)
@@ -111,7 +111,7 @@ qr4change/
 
 ---
 
-## ⚙️ Installation & Setup
+##  Installation & Setup
 
 ### Prerequisites
 - **Node.js** (v18+)
@@ -171,7 +171,7 @@ qr4change/
 
 ---
 
-## 🎮 Usage Guide
+##  Usage Guide
 
 ### For Citizens
 1. **Report an Issue:**
@@ -200,7 +200,7 @@ qr4change/
 
 ---
 
-## 🔬 Methodology
+##  Methodology
 
 ### Dataset Collection
 - **Images:** 
@@ -227,7 +227,7 @@ qr4change/
 
 ---
 
-## 📈 Experimental Results
+##  Experimental Results
 
 ### Model Performance
 | Metric          | InceptionV3 (Garbage) | YOLO11n (Potholes) |
@@ -246,24 +246,24 @@ qr4change/
 
 ---
 
-## 👥 Contributors
+##  Contributors
 
+- **Chandrakant Thakare** - [chandrakant.22310303@viit.ac.in](mailto:chandrakant.22310303@viit.ac.in)
 - **Yash Maske** - [yash.22310125@viit.ac.in](mailto:yash.22310125@viit.ac.in)
 - **Sakshi Lokhande** - [sakshi.22310541@viit.ac.in](mailto:sakshi.22310541@viit.ac.in)
-- **Chandrakant Thakare** - [chandrakant.22310303@viit.ac.in](mailto:chandrakant.22310303@viit.ac.in)
 - **Shubhankar Jakate** - [shubhankar.22310371@viit.ac.in](mailto:shubhankar.22310371@viit.ac.in)
 
 *Dept. of CSE AI, Vishwakarma Institute of Information Technology, Pune, India*
 
 ---
 
-## 📜 License
+##  License
 
 Licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute.
 
 ---
 
-## 📚 References
+##  References
 
 Full references are in the [research paper](QR4Change.docx). Key inspirations include:
 - Smart city grievance systems (IJRPR, JETIR)
